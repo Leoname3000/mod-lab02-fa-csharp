@@ -13,7 +13,6 @@ namespace fans
         public bool IsAcceptState;
     }
   
-  
     public class FA1
     {
         State initial = new State()
@@ -72,7 +71,16 @@ namespace fans
         }
         public bool? Run(IEnumerable<char> s)
         {
-            return false;
+            State current = InitialState;
+            foreach (char c in s)
+            {
+                current = current.Transitions[c];
+                if (current == null)
+                {
+                    return null;
+                }
+            }
+            return current.IsAcceptState;
         }
     }
   
@@ -118,7 +126,16 @@ namespace fans
         }
         public bool? Run(IEnumerable<char> s)
         {
-            return false;
+            State current = InitialState;
+            foreach (char c in s)
+            {
+                current = current.Transitions[c];
+                if (current == null)
+                {
+                    return null;
+                }
+            }
+            return current.IsAcceptState;
         }
     }
     

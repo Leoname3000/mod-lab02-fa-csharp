@@ -15,37 +15,37 @@ namespace fans
   
     public class FA1
     {
-        State initial = new State()
+        public static State initial = new State()
         {
             Name = "initial";
             Transitions = new Dictionary<char, State>;
             IsAcceptState = false;
         };
-        State onesBeforeZero = new State()
+        public static State onesBeforeZero = new State()
         {
             Name = "onesBeforeZero";
             Transitions = new Dictionary<char, State>;
             IsAcceptState = false;
         };
-        State zeroWithoutOnes = new State()
+        public static State zeroWithoutOnes = new State()
         {
             Name = "zeroWithoutOnes";
             Transitions = new Dictionary<char, State>;
             IsAcceptState = false;
         };
-        State zeroAfterOnes = new State()
+        public static State zeroAfterOnes = new State()
         {
             Name = "zeroAfterOnes";
             Transitions = new Dictionary<char, State>;
             IsAcceptState = true;
         };
-        State onesAfterZero = new State()
+        public static State onesAfterZero = new State()
         {
             Name = "onesAfterZero";
             Transitions = new Dictionary<char, State>;
             IsAcceptState = true;
         };
-        State extraZeros = new State()
+        public static State extraZeros = new State()
         {
             Name = "extraZeros";
             Transitions = new Dictionary<char, State>;
@@ -86,25 +86,25 @@ namespace fans
   
     public class FA2
     {
-        State even0even1 = new State()
+        public static State even0even1 = new State()
         {
             Name = "even0even1";
             Transitions = new Dictionary<char, State>;
             IsAcceptState = false;
         };
-        State odd0even1 = new State()
+        public static State odd0even1 = new State()
         {
             Name = "odd0even1";
             Transitions = new Dictionary<char, State>;
             IsAcceptState = false;
         };
-        State even0odd1 = new State()
+        public static State even0odd1 = new State()
         {
             Name = "even0odd1";
             Transitions = new Dictionary<char, State>;
             IsAcceptState = false;
         };
-        State odd0odd1 = new State()
+        public static State odd0odd1 = new State()
         {
             Name = "odd0odd1";
             Transitions = new Dictionary<char, State>;
@@ -141,19 +141,19 @@ namespace fans
     
     public class FA3
     {
-        State zeros = new State()
+        public static State zeros = new State()
         {
             Name = "zeros";
             Transitions = new Dictionary<char, State>;
             IsAcceptState = false;
         };
-        State firstOne = new State()
+        public static State firstOne = new State()
         {
             Name = "firstOne";
             Transitions = new Dictionary<char, State>;
             IsAcceptState = false;
         };
-        State secondOne = new State()
+        public static State secondOne = new State()
         {
             Name = "secondOne";
             Transitions = new Dictionary<char, State>;

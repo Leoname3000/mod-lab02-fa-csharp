@@ -17,44 +17,44 @@ namespace fans
     {
         public static State initial = new State()
         {
-            Name = "initial";
-            Transitions = new Dictionary<char, State>;
-            IsAcceptState = false;
+            Name = "initial",
+            Transitions = new Dictionary<char, State>(),
+            IsAcceptState = false
         };
         public static State onesBeforeZero = new State()
         {
-            Name = "onesBeforeZero";
-            Transitions = new Dictionary<char, State>;
-            IsAcceptState = false;
+            Name = "onesBeforeZero",
+            Transitions = new Dictionary<char, State>(),
+            IsAcceptState = false
         };
         public static State zeroWithoutOnes = new State()
         {
-            Name = "zeroWithoutOnes";
-            Transitions = new Dictionary<char, State>;
-            IsAcceptState = false;
+            Name = "zeroWithoutOnes",
+            Transitions = new Dictionary<char, State>(),
+            IsAcceptState = false
         };
         public static State zeroAfterOnes = new State()
         {
-            Name = "zeroAfterOnes";
-            Transitions = new Dictionary<char, State>;
-            IsAcceptState = true;
+            Name = "zeroAfterOnes",
+            Transitions = new Dictionary<char, State>(),
+            IsAcceptState = true
         };
         public static State onesAfterZero = new State()
         {
-            Name = "onesAfterZero";
-            Transitions = new Dictionary<char, State>;
-            IsAcceptState = true;
+            Name = "onesAfterZero",
+            Transitions = new Dictionary<char, State>(),
+            IsAcceptState = true
         };
         public static State extraZeros = new State()
         {
-            Name = "extraZeros";
-            Transitions = new Dictionary<char, State>;
-            IsAcceptState = false;
+            Name = "extraZeros",
+            Transitions = new Dictionary<char, State>(),
+            IsAcceptState = false
         };
 
         State InitialState = initial;
 
-        public FA3()
+        public FA1()
         {
             initial.Transitions['0'] = zeroWithoutOnes;
             initial.Transitions['1'] = onesBeforeZero;
@@ -88,32 +88,32 @@ namespace fans
     {
         public static State even0even1 = new State()
         {
-            Name = "even0even1";
-            Transitions = new Dictionary<char, State>;
-            IsAcceptState = false;
+            Name = "even0even1",
+            Transitions = new Dictionary<char, State>(),
+            IsAcceptState = false
         };
         public static State odd0even1 = new State()
         {
-            Name = "odd0even1";
-            Transitions = new Dictionary<char, State>;
-            IsAcceptState = false;
+            Name = "odd0even1",
+            Transitions = new Dictionary<char, State>(),
+            IsAcceptState = false
         };
         public static State even0odd1 = new State()
         {
-            Name = "even0odd1";
-            Transitions = new Dictionary<char, State>;
-            IsAcceptState = false;
+            Name = "even0odd1",
+            Transitions = new Dictionary<char, State>(),
+            IsAcceptState = false
         };
         public static State odd0odd1 = new State()
         {
-            Name = "odd0odd1";
-            Transitions = new Dictionary<char, State>;
-            IsAcceptState = true;
+            Name = "odd0odd1",
+            Transitions = new Dictionary<char, State>(),
+            IsAcceptState = true
         };
 
         State InitialState = even0even1;
 
-        public FA3()
+        public FA2()
         {
             even0even1.Transitions['0'] = odd0even1;
             even0even1.Transitions['1'] = even0odd1;
@@ -143,21 +143,21 @@ namespace fans
     {
         public static State zeros = new State()
         {
-            Name = "zeros";
-            Transitions = new Dictionary<char, State>;
-            IsAcceptState = false;
+            Name = "zeros",
+            Transitions = new Dictionary<char, State>(),
+            IsAcceptState = false
         };
         public static State firstOne = new State()
         {
-            Name = "firstOne";
-            Transitions = new Dictionary<char, State>;
-            IsAcceptState = false;
+            Name = "firstOne",
+            Transitions = new Dictionary<char, State>(),
+            IsAcceptState = false
         };
         public static State secondOne = new State()
         {
-            Name = "secondOne";
-            Transitions = new Dictionary<char, State>;
-            IsAcceptState = true;
+            Name = "secondOne",
+            Transitions = new Dictionary<char, State>(),
+            IsAcceptState = true
         };
 
         State InitialState = zeros;
